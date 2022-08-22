@@ -1,3 +1,72 @@
 body {
   margin: 0;
 }
+
+/* Mobile first Design */
+header{
+  /* Sets background color to black. */
+  background-color: black;
+  /* 
+    Adds 40px of space under header so main content isnt
+    so close to the nav
+  */
+  margin-bottom: 40px; 
+}
+h1{
+  display: flex; 
+  justify-content: center;
+  color: white; 
+  /* removes the whites space on top of page */
+  margin: 0; 
+  /* adds more spacing from the top */
+  padding-top: 20px; 
+}
+header nav{
+  display: flex; 
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex; 
+  flex-direction: row; 
+  padding: left; 
+  list-style: none;;
+}
+
+header nav ul li a{
+  color: white; 
+  text-decoration: none;
+  margin: 0 20px 0 0; 
+}
+
+/* Only effects the last child */
+header nav ul li a:last-child a{
+  margin-right: 0; 
+}
+
+/* Anything bigger than 600px */
+@media all and (min-width: 600px){
+  header{
+    /*changes from block to flex bc thats default */
+    display: flex; 
+    /*sets spacing in between equally */
+    justify-content: space-between; 
+    /* 
+      Adds 0 pixels padding top and bottom, 
+      and 30 pixels padding left and right. 
+    */
+    padding: 0 30px; 
+  }
+
+  header h1{
+    /* 
+      Sets 14 pixels of margin above and below the `h1` and sets 
+      0 pixels of margin to the left and right. 
+    */
+    margin: 14px 0; 
+  }
+
+  header nav ul li a:hover{
+    color: #bdbdbd;
+  }
+}
