@@ -51,12 +51,26 @@ main h2 {
   margin-bottom: 20px;
 }
 
+/*
+  There are different types of 
+  align-self child properties. This list 
+  includes: 
+  auto; (This will choose last used align-self or be flex-start
+  flex-start; (Will be at the beginning)
+  flex-end; (Will be at the bottom)
+  center; (This will be centered)
+  baseline; (not sure)
+  stretch; (also not sure)
+*/
+
+
+
 .self-flex-start {
   align-self: center;
 }
 
 .self-flex-end {
-  align-self: flex-start;
+  align-self: stretch;
 }
 
 .self-center {
